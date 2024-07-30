@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    
+    <title>Decodificador de texto</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="./assets/Frame 6.svg" alt="logo da alura">
+        
+        
+    </header>
+    
+    <main>
+        <div class="apresentacao__inicial">
+        <div class="apresentacao">
+            
+            <input class="apresentacao__entrada" id="texto-original" type="text" placeholder="Digite seu texto">
+            <div class="alerta">
+                <img src="./assets/Group.png"  width="16px" height="16px"  alt="sinal de exclamacao"> 
+                <p class="padrao__texto">Apenas letras minúsculas e sem acento</p>
+            </div>
+            <div class="apresentacao__esquerda">     
+            <div>
+                     <button onclick="esconder('conteudo')" id="criptografar" class="apresentacao__botoes__navegacao">Criptografar</button>
+            </div>
+            <div>
+                     <button onclick="esconder('conteudo')" id="descriptografar" class="apresentacao__botoes__navegacao" >Descriptografar</button>
+            </div>
+            
+            </div>
+        </div>    
+            <div class="apresentacao__direita" >
+                <textarea name="" id="resultado"></textarea>
+            <div id="conteudo">
+                <img class="imagem__contexto" src="./assets/High quality products 1 1.svg">
+                <p class="apresentacao__saida"> Nenhuma mensagem <br> encontrada</p> <br>
+                <div class="apresentacao__saida1" >Digite um texto que você deseja <br> criptografar ou descriptografar.</div>
+            </div>
+                <button onclick="" id="btn_copiar" class="apresentacao__botoes__copiar">Copiar</button>
+            </div>
+                
+        </div> 
+    </main>
+    
+   
+    <footer class="rodape">
+        <p>Desenvolvido por Gabriel Brito</p>
+    </footer>
+
+</body>
+    <script src="app.js" defer></script>
+</html>
